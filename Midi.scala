@@ -8,7 +8,5 @@ object Main {
     val is: InputStream = new FileInputStream(new File(args.head))
     sequencer.setSequence(is)
     sequencer.start
-    Thread.sleep(3000)
-    sequencer.close
   }
 }
